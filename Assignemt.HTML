@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Website Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="secondName">Second Name:</label>
+                <input type="text" id="secondName" name="secondName" required>   
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <section class="info-section">
+            <h1>Welcome to Our Website</h1>
+            <p>HOLA !!!!</p>
+            <p>Altudo is a global digital transformation company that specializes in helping businesses leverage technology and digital strategies to enhance their marketing and operational effectiveness.</p>
+
+            <h2>About Altudo</h2>
+            <div class="pagination-container">
+                <div class="pagination-content">
+                    <div class="page" id="page1">
+                        <h3>Digital Marketing</h3>
+                        <img src="digital-marketing.jpg" alt="Digital Marketing" class="page-image">
+                        <p>SEO, PPC, Content Marketing, Social Media Marketing, Email Marketing</p>
+                    </div>
+                    <div class="page" id="page2">
+                        <h3>Technology Solutions</h3>
+                        <img src="technology-solutions.jpg" alt="Technology Solutions" class="page-image">
+                        <p>Web Development, Mobile App Development, Custom Software Development, Digital Transformation</p>
+                    </div>
+                    <div class="page" id="page3">
+                        <h3>Analytics and Insights</h3>
+                        <img src="analytics-insights.jpg" alt="Analytics and Insights" class="page-image">
+                        <p>Data Analytics, Customer Insights, Performance Tracking</p>
+                    </div>
+                    <div class="page" id="page4">
+                        <h3>Consulting and Strategy</h3>
+                        <img src="consulting-strategy.jpg" alt="Consulting and Strategy" class="page-image">
+                        <p>Digital Strategy Consulting, Market Research, User Experience (UX) Design</p>
+                    </div>
+                </div>
+                <div class="pagination-controls">
+                    <button onclick="prevPage()">Previous</button>
+                    <span id="pageNumber">1</span>
+                    <button onclick="nextPage()">Next</button>
+                </div>
+            </div>
+        </section>
+        
+        
+    
+    </main> 
+
+    <footer>
+        <div class="footer-container">
+            <p>This is the footer for the Website.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
